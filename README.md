@@ -43,6 +43,10 @@ Install / Run n8n
 ```
 npx n8n
 ```
+If the above doesn't work try
+```
+npm install n8n -g
+```
 Open http://localhost:5678 in your browser
 
 
