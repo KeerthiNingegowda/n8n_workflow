@@ -4,11 +4,57 @@ This repo includes details related to a simple n8n workflow creation. This workf
 
 Note:- I am using free, open-source version of n8n for this exploration. See license and NOTICE.md for details about re-use.
 
+# Problem
+Knowledge base(policies) customer support chatbot that can help users to provide accurate inofmration regarding services policies, regulatory requirements and other technical troubleshooting guide. <b> The chatbot doesn't have access to customer information or their accounts </b>
+
+## Underlying technology 
+
+An simple RAG based chatbot build using n8n feeding on unstructured data only (i.e. documents of policies). For brevity, Open AI models were used. If you want you can use Ollama models too.
+
+Note:- The goal here is to spin up a working RAG system with somewhat hardened system prompt with a certain level accuracy confirmed via eyeballing. The workflow has not be rigorously tested for accuracy, and other factors that may affect accuracy i.e. chunk size, embedding types, custom embeddings etc.,
+
+<b> Documents </b>
+<pre>
+1. ~10 documents were created using Gemini and covers 5 distinct categories.
+    a. Billing and offers
+    b. Home Internet and Installation
+    c. Home Phone and Emergency Services
+    d. Mobile Services and Packages
+    e. Regulatory and Customer Rights
+
+The  documents can be found <a href = "">here</a>
+</pre>
+
+
+<b>Embedding model</b>
+Model used:- text_embedding-3-small with 1024 dimensions.
+Note that the above embedding model has dimensions upto 1536. However for memory and token efficiency it has been slightly reduced to 1024, thanks to <a href="https://arxiv.org/abs/2205.13147"> Matryoshka Representation Learning </a>
+
+<b> Chat model </b>
+Model used:- gpt-5-nano (One of the cheapest model)
+
+
+# 2 modes in n8n
+
+## Chat mode - Quick set up and easy to harden logic
+
+![alt text](./images/chatbot_RAG.png)
+
+Sample response
+![alt text](./images/sample_response.png)
+
+## Webhook mode - Ideal of red-teaming LLM applications at scale
+
+![alt text](./images/webhook_RAG.png)
+
+Once the workflow is published you can send requests/receive responses to/from this workflow via API.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 ## Start n8n
 ```
 n8n start
 ```
-
 ## Installation
 I am following the node approach. Please feel free to use the docker approach if you would like.
 
