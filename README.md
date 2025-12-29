@@ -15,7 +15,7 @@ Note:- The goal here is to spin up a working RAG system with somewhat hardened s
 
 <b> Documents </b>
 <pre>
-1. ~10 documents were created using Gemini and covers 5 distinct categories.
+~10 documents were created using Gemini and covers 5 distinct categories.
     a. Billing and offers
     b. Home Internet and Installation
     c. Home Phone and Emergency Services
