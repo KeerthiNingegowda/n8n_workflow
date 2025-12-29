@@ -4,6 +4,11 @@ This repo includes details related to a simple n8n workflow creation. This workf
 
 Note:- I am using free, open-source version of n8n for this exploration. See license and NOTICE.md for details about re-use.
 
+## Start n8n
+```
+n8n start
+```
+
 ## Installation
 I am following the node approach. Please feel free to use the docker approach if you would like.
 
