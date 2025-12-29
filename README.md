@@ -11,7 +11,7 @@ Knowledge base(policies) customer support chatbot that can help users to provide
 
 An simple RAG based chatbot build using n8n feeding on unstructured data only (i.e. documents of policies). For brevity, Open AI models were used. If you want you can use Ollama models too.
 
-Note:- The goal here is to spin up a working RAG system with somewhat hardened system prompt with a certain level accuracy confirmed via eyeballing. The workflow has not be rigorously tested for accuracy, and other factors that may affect accuracy i.e. chunk size, embedding types, custom embeddings etc.,
+Note:- The goal here is to spin up a working RAG system with somewhat hardened system prompt with a certain level accuracy confirmed via eyeballing. The workflow has not be rigorously optimized for accuracy, and other factors that may affect accuracy i.e. chunk size, embedding types, custom embeddings etc.,
 
 <b> Documents </b>
 <pre>
