@@ -22,7 +22,7 @@ Note:- The goal here is to spin up a working RAG system with somewhat hardened s
     d. Mobile Services and Packages
     e. Regulatory and Customer Rights
 
-The  documents can be found <a href = "">here</a>
+The  documents can be found <a href = "https://github.com/KeerthiNingegowda/n8n_workflow/tree/main/telecom_policy_docs">here</a>
 </pre>
 
 
